@@ -17,35 +17,39 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: #f5f1e9; /* Tło strony */
+            background-color: #f7f0e7; /* Kolor tła zbliżony do jasnej części obrazka */
         }
 
         .container {
             display: flex;
-            justify-content: space-between;
-            align-items: center;
             width: 80%;
             max-width: 1200px;
             height: 80%;
+            background-color: white; /* Dodatkowy kontrast na tło */
         }
 
-        .text-section {
+        .left {
             width: 50%;
-            padding: 20px;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: #f7f0e7; /* Jasne tło z lewej strony */
+        }
+
+        .left h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
             color: black;
         }
 
-        .text-section h1 {
-            font-size: 48px;
-            margin-bottom: 20px;
-        }
-
-        .text-section p {
+        .left p {
             font-size: 18px;
             margin-bottom: 40px;
+            color: black;
         }
 
-        .text-section a {
+        .left a {
             display: inline-block;
             padding: 15px 30px;
             background-color: black;
@@ -57,37 +61,40 @@
             transition: background-color 0.3s;
         }
 
-        .text-section a:hover {
+        .left a:hover {
             background-color: #333;
         }
 
-        .image-section {
+        .right {
             width: 50%;
+            background-color: #a41b1e; /* Czerwony kolor z prawej strony */
             display: flex;
             justify-content: center;
             align-items: center;
+            position: relative;
         }
 
-        .image-section img {
-            max-width: 100%;
+        .right img {
+            max-width: 70%;
             height: auto;
-            border-radius: 50%;
+            border-radius: 50%; /* Uczynienie obrazka okrągłym */
         }
+
     </style>
 </head>
 <body>
 
     <div class="container">
-        <!-- Sekcja z tekstem -->
-        <div class="text-section">
+        <!-- Lewa sekcja: tekst i przycisk -->
+        <div class="left">
             <h1>Masz to w genach!</h1>
             <p>Projekt edukacyjny realizowany w ramach Olimpiady Zwolnieni z Teorii</p>
-            <a href="startowa.html">PRZEJDŹ DO TREŚCI</a>
+            <a href="glowna.html">PRZEJDŹ DO TREŚCI</a>
         </div>
 
-        <!-- Sekcja z obrazem -->
-        <div class="image-section">
-            <img src="Masz to w genach (1).png" alt="Masz to w genach logo">
+        <!-- Prawa sekcja: okrągłe logo -->
+        <div class="right">
+            <img src="IMG_2062(1).jpg" alt="Masz to w genach logo">
         </div>
     </div>
 
