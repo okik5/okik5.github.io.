@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Masz to w genach!</title>
+    <!-- Dodanie linku do czcionki Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -13,7 +15,7 @@
 
         body, html {
             height: 100%;
-            font-family: Roboto, sans-serif;
+            font-family: 'Poppins', sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -67,16 +69,17 @@
         }
 
         .right {
-            width: 50%;
+            width: 50%; /* Prawa strona zajmuje 50% szerokości */
             background-color: #a41b1e;
             display: flex;
             justify-content: center;
             align-items: center;
             position: relative;
+            text-align: right; /* Wyrównanie do prawej */
         }
 
         .right img {
-            max-width: 70%;
+            max-width: 100%; /* Logo zajmuje 100% wysokości kontenera */
             height: auto;
             border-radius: 50%;
         }
@@ -87,23 +90,29 @@
         }
 
         .social h2 {
-            font-family: Roboto;
+            font-family: 'Poppins', sans-serif;
             font-size: 20px;
-            color: white;
+            color: black;
             margin-bottom: 10px;
         }
 
         .social a {
-            font-family: Roboto;
-            display: inline-block;
+            display: inline-flex;
+            align-items: center;
             margin-right: 15px;
-            color: white;
+            color: black; /* Zmieniono na czarny dla lepszej widoczności */
             text-decoration: none;
             font-size: 16px;
         }
 
         .social a:hover {
             text-decoration: underline;
+        }
+
+        .social img {
+            margin-right: 10px;
+            width: 24px; /* Rozmiar ikon */
+            height: 24px;
         }
 
         /* Stylowanie dla mniejszych ekranów */
@@ -175,8 +184,14 @@
             <!-- Sekcja social media -->
             <div class="social">
                 <h2>Nasze social media:</h2>
-                <a href="https://www.instagram.com/masz_to_w_genach?igsh=MWl6Z3BteGIwbWVtcQ==" target="_blank">Instagram</a>
-                <a href="https://www.tiktok.com/@masz.to.w.genach?_t=8qP59xxpCEA&_r=1" target="_blank">TikTok</a>
+                <a href="https://www.instagram.com/masz_to_w_genach?igsh=MWl6Z3BteGIwbWVtcQ==" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo">
+                    Instagram
+                </a>
+                <a href="https://www.tiktok.com/@masz.to.w.genach?_t=8qP59xxpCEA&_r=1" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/TikTok_logo.svg" alt="TikTok Logo">
+                    TikTok
+                </a>
             </div>
         </div>
 
@@ -188,4 +203,5 @@
 
 </body>
 </html>
+
 
