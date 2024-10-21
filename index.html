@@ -14,33 +14,35 @@
             justify-content: center;
             align-items: center;
             background-image: url('Masz to w genach (1).png'); /* Obrazek tła */
-            background-size: cover;
+            background-size: cover; /* Rozciąga obraz na całą stronę, zachowując proporcje */
             background-position: center;
+            background-repeat: no-repeat; /* Zapobiega powtarzaniu obrazu */
             color: white;
             text-align: center;
             font-size: 36px;
             font-weight: bold;
             cursor: pointer; /* Zmienia kursor na wskaźnik */
         }
+
+        /* Dodanie stylów dla mniejszych ekranów, np. smartfonów */
+        @media only screen and (max-width: 768px) {
+            body {
+                font-size: 28px; /* Zmniejszanie tekstu na mniejszych ekranach */
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            body {
+                font-size: 22px; /* Dalsze zmniejszenie tekstu dla bardzo małych ekranów */
+            }
+        }
+
         a {
             display: none; /* Ukryj link */
-        }
-        img {
-            max-width: 100%; /* Umożliwia, by obrazek nie wykraczał poza szerokość kontenera */
-            height: auto; /* Utrzymuje proporcje obrazka */
-            margin-top: 20px; /* Dodaje odstęp między tekstem a obrazkiem */
         }
     </style>
 </head>
 <body onclick="window.location.href='startowa.html'"> <!-- Umożliwia kliknięcie gdziekolwiek na body -->
-
-    <div>
-       
-        <!-- Dodanie obrazka na stronie startowej -->
-        <img src="Masz to w genach (1).png"> <!-- Zmien "obrazek_startowy.png" na odpowiednią nazwę pliku -->
-        <a href="startowa.html">Przejdź do treści</a> <!-- Link został ukryty, ale nadal działa -->
-    </div>
-
 </body>
 </html>
 
