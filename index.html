@@ -5,40 +5,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Masz to w genach!</title>
     <style>
-        body, html {
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
             height: 100%;
-            overflow: hidden;
+            font-family: Arial, sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
-            background-image: url('Masz to w genach (1).png'); /* Obrazek tła */
-            background-size: cover;
-            background-position: center;
+            background-color: #f5f1e9; /* Tło strony */
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 80%;
+            max-width: 1200px;
+            height: 80%;
+        }
+
+        .text-section {
+            width: 50%;
+            padding: 20px;
+            color: black;
+        }
+
+        .text-section h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .text-section p {
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+
+        .text-section a {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: black;
             color: white;
-            text-align: center;
-            font-size: 36px;
+            text-decoration: none;
+            font-size: 18px;
             font-weight: bold;
-            cursor: pointer; /* Zmienia kursor na wskaźnik */
+            border-radius: 5px;
+            transition: background-color 0.3s;
         }
-        a {
-            display: none; /* Ukryj link */
+
+        .text-section a:hover {
+            background-color: #333;
         }
-        img {
-            max-width: 100%; /* Umożliwia, by obrazek nie wykraczał poza szerokość kontenera */
-            height: auto; /* Utrzymuje proporcje obrazka */
-            margin-top: 20px; /* Dodaje odstęp między tekstem a obrazkiem */
+
+        .image-section {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%;
         }
     </style>
 </head>
-<body onclick="window.location.href='startowa.html'"> <!-- Umożliwia kliknięcie gdziekolwiek na body -->
+<body>
 
-    <div>
-       
-        <!-- Dodanie obrazka na stronie startowej -->
-        <img src="Masz to w genach (1).png"> <!-- Zmien "obrazek_startowy.png" na odpowiednią nazwę pliku -->
-        <a href="startowa.html">Przejdź do treści</a> <!-- Link został ukryty, ale nadal działa -->
+    <div class="container">
+        <!-- Sekcja z tekstem -->
+        <div class="text-section">
+            <h1>Masz to w genach!</h1>
+            <p>Projekt edukacyjny realizowany w ramach Olimpiady Zwolnieni z Teorii</p>
+            <a href="startowa.html">PRZEJDŹ DO TREŚCI</a>
+        </div>
+
+        <!-- Sekcja z obrazem -->
+        <div class="image-section">
+            <img src="Masz to w genach (1).png" alt="Masz to w genach logo">
+        </div>
     </div>
 
 </body>
