@@ -13,19 +13,20 @@
 
         body, html {
             height: 100%;
-            font-family: Roboto;
+            font-family: Roboto, sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: #f7f0e7; /* Kolor tła zbliżony do jasnej części obrazka */
+            background-color: #f7f0e7;
         }
 
         .container {
             display: flex;
+            flex-direction: row;
             width: 80%;
             max-width: 1200px;
             height: 80%;
-            background-color: white; /* Dodatkowy kontrast na tło */
+            background-color: white;
         }
 
         .left {
@@ -34,7 +35,7 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            background-color: #f7f0e7; /* Jasne tło z lewej strony */
+            background-color: #f7f0e7;
         }
 
         .left h1 {
@@ -67,7 +68,7 @@
 
         .right {
             width: 50%;
-            background-color: #a41b1e; /* Czerwony kolor z prawej strony */
+            background-color: #a41b1e;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -77,9 +78,87 @@
         .right img {
             max-width: 70%;
             height: auto;
-            border-radius: 50%; /* Uczynienie obrazka okrągłym */
+            border-radius: 50%;
         }
 
+        /* Dodanie sekcji social media */
+        .social {
+            margin-top: 30px;
+        }
+
+        .social h2 {
+            font-size: 20px;
+            color: black;
+            margin-bottom: 10px;
+        }
+
+        .social a {
+            display: inline-block;
+            margin-right: 15px;
+            color: black;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .social a:hover {
+            text-decoration: underline;
+        }
+
+        /* Stylowanie dla mniejszych ekranów */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                width: 90%;
+                height: auto;
+            }
+
+            .left {
+                width: 100%;
+                padding: 30px;
+            }
+
+            .left h1 {
+                font-size: 36px;
+            }
+
+            .left p {
+                font-size: 16px;
+            }
+
+            .left a {
+                padding: 10px 20px;
+                font-size: 16px;
+            }
+
+            .right {
+                width: 100%;
+                padding: 30px 0;
+            }
+
+            .right img {
+                max-width: 50%;
+            }
+        }
+
+        /* Stylowanie dla jeszcze mniejszych ekranów (np. telefony komórkowe) */
+        @media (max-width: 480px) {
+            .left h1 {
+                font-size: 28px;
+            }
+
+            .left p {
+                font-size: 14px;
+            }
+
+            .left a {
+                font-size: 14px;
+                padding: 8px 16px;
+            }
+
+            .right img {
+                max-width: 40%;
+            }
+        }
     </style>
 </head>
 <body>
@@ -90,6 +169,13 @@
             <h1>Masz to w genach!</h1>
             <p>Projekt edukacyjny realizowany w ramach Olimpiady Zwolnieni z Teorii</p>
             <a href="startowa.html">PRZEJDŹ DO TREŚCI</a>
+
+            <!-- Sekcja social media -->
+            <div class="social">
+                <h2>Nasze social media:</h2>
+                <a href="https://www.instagram.com/masz_to_w_genach?igsh=MWl6Z3BteGIwbWVtcQ==" target="_blank">Instagram</a>
+                <a href="https://www.tiktok.com/@masz.to.w.genach?_t=8qP59xxpCEA&_r=1" target="_blank">TikTok</a>
+            </div>
         </div>
 
         <!-- Prawa sekcja: okrągłe logo -->
@@ -100,3 +186,4 @@
 
 </body>
 </html>
+
