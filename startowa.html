@@ -8,6 +8,36 @@
     <title>Masz to w genach</title>
     <link rel="stylesheet" href="styles.css">
     <style>
+        details {
+    background-color: #fff5f5;
+    border: 1px solid #a50034;
+    border-radius: 5px;
+    margin: 0.5rem 0;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+summary {
+    font-weight: bold;
+    color: #a50034;
+}
+
+details[open] summary {
+    color: #d41c5a;
+}
+
+details p {
+    margin-top: 0.5rem;
+    color: #333;
+}
+#countdown {
+    background-color: #fff5f5;
+    padding: 1rem;
+    text-align: center;
+    border: 2px solid #a50034;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
         section[aria-label="Newsletter"] {
     border: 2px solid #a50034; /* Ciemnoczerwony kolor ramki */
     background-color: #fff5f5; /* Jasnoczerwony, delikatny tło */
