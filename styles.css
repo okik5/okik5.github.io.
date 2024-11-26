@@ -331,16 +331,5 @@ details[open] summary {
     color: #d41c5a;
 }
 
-details p {
-    margin-top: 0.5rem;
-    color: #333;
-}
-#countdown {
-    background-color: #fff5f5;
-    padding: 1rem;
-    text-align: center;
-    border: 2px solid #a50034;
-    border-radius: 10px;
-    margin-top: 1rem;
-}
+
 
