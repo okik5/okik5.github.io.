@@ -280,4 +280,38 @@ li:before {
     color: #8b0000; /* Kolor myślnika */
     font-weight: bold; /* Pogrubiamy myślnik */
 }
+section[aria-label="Newsletter"] {
+    border: 2px solid #a50034; /* Ciemnoczerwony kolor ramki */
+    background-color: #fff5f5; /* Jasnoczerwony, delikatny tło */
+    border-radius: 10px; /* Zaokrąglone rogi */
+    padding: 1.5rem;
+    margin-top: 2rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Dodanie lekkiego cienia */
+}
+
+section[aria-label="Newsletter"] h2, 
+section[aria-label="Newsletter"] h3 {
+    color: #a50034; /* Tekst w kolorze ciemnoczerwonym */
+}
+
+section[aria-label="Newsletter"] input {
+    border: 1px solid #a50034; /* Czerwony kolor obramowania dla pól */
+    border-radius: 5px;
+    padding: 0.75rem;
+}
+
+section[aria-label="Newsletter"] button {
+    background-color: #a50034; /* Czerwony przycisk */
+    color: white; /* Biały tekst */
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+section[aria-label="Newsletter"] button:hover {
+    background-color: #d41c5a; /* Jasnoczerwony na hover */
+}
+
 
